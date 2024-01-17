@@ -1,11 +1,13 @@
 export const Hero = () => {
   return (
     <div className="px-20 py-24">
-      <div className="flex flex-row justify-between gap-12 px-8">
+      <div className="flex flex-row gap-12 px-8 h-[360px]">
         <div className="flex flex-col gap-12 max-w-3xl ">
           <div>
-            <h1 className="text-6xl font-bold mb-2 ">Hi, I’m Sagar 👋</h1>
-            <p>
+            <h1 className="text-gray-900 text-6xl font-bold mb-2 leading-[72px] tracking-[-1.2px]">
+              Hi, I'm Sagar 👋
+            </h1>
+            <p className="text-gray-600 leading-6">
               I'm a full stack developer (React.js & Node.js) with a focus on
               creating (and occasionally designing) exceptional digital
               experiences that are fast, accessible, visually appealing, and
@@ -13,11 +15,35 @@ export const Hero = () => {
               over 7 years, I still love it as if it was something new.
             </p>
           </div>
-          <div>
-            <p>Ahmedabad, India</p>
+          <div className="text-gray-600 leading-6">
+            <p className="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Ahmedabad, India
+            </p>
             <p>Available for new projects</p>
           </div>
-          <div className="flex gap-1">
+          <div className="flex gap-2.5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -100,8 +126,9 @@ export const Hero = () => {
             </svg>
           </div>
         </div>
-        <div>
-          <img className="w-[280px] h-[320px]" src="/Pic.png" alt="" />
+        <div className="flex flex-col justify-start items-center min-w-96 relative">
+          <img className="w-[280px] h-[320px] absolute z-10" src="/Pic.png" alt="" />
+          <div className="w-[280px] h-[320px] bg-gray-200 absolute bottom-0 right-4 z-0 "></div>
         </div>
       </div>
     </div>

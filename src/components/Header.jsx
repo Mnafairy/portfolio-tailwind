@@ -1,13 +1,16 @@
 export const Header = () => {
   return (
     <div className="flex flex-row justify-between px-20 py-4 ">
-      <h1 className="font-bold text-3xl ml-8">&#60;SS/&#62;</h1>
+      <h1 className="font-bold text-3xl ml-8 tracking-[-0.6px]">
+        &#60;SS /&#62;
+      </h1>
       <div className="flex flex-row justify-center items-center gap-6 mr-8">
-        <ul className="flex flex-row justify-center items-center gap-6 style-none">
+        <ul className="flex flex-row justify-center items-center gap-6 style-none text-gray-600 font-medium leading-6	">
           <li>About</li>
           <li>Work</li>
           <li>Testimonials</li>
           <li>Contact</li>
+          <li className="w-px text-gray-100 h-6	">I</li>
         </ul>
         <button>
           <svg
@@ -82,7 +85,7 @@ export const Header = () => {
             />
           </svg>
         </button>
-        <button className="px-4 py-1.5 bg-black text-white rounded-xl	">
+        <button className="px-4 py-1.5 bg-gray-900 text-white rounded-xl	">
           Download CV
         </button>
       </div>
