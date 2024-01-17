@@ -1,9 +1,9 @@
-import { Header,Hero } from "@/components";
+import { Header, Hero } from "@/components";
 const Portfolio = () => {
   return (
-    <div >
+    <div className="max-w-[1440px]	m-auto">
       <Header />
-      <Hero/>
+      <Hero />
     </div>
   );
 };
