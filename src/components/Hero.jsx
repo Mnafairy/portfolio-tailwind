@@ -127,7 +127,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex flex-col justify-start items-center min-w-96 relative">
-          <img className="w-[280px] h-[320px] absolute z-10" src="/Pic.png" alt="" />
+          <img className="w-[280px] h-[320px] absolute  z-10" src="/Pic.png" alt="" />
           <div className="w-[280px] h-[320px] bg-gray-200 absolute bottom-0 right-4 z-0 "></div>
         </div>
       </div>
