@@ -1,7 +1,15 @@
 export const Hero = () => {
   return (
-    <div className="px-20 py-24">
-      <div className="flex flex-row gap-12 px-8 h-[360px]">
+    <div className="flex flex-col items-start justify-center gap-12  py-16 px-4 lg:px-20 lg:py-24 lg:flex lg:flex-row lg:flex-wrap-reverse " >
+      <div className="flex flex-col gap-12 px-8">
+        <div className="flex flex-col  items-center w-[343px] h-[360px] lg:w-[400px] lg:h-[360px] lg:flex lg:center relative">
+          <img
+            className="w-60	 h-[280px] lg:w-72 lg:h-80 z-10"
+            src="/pic.png"
+            alt=""
+          />
+          <div className="w-72 h-72 lg:w-72 lg:h-80 bg-gray-200 absolute z-0 lg:bottom-0 lg:right-4"></div>
+        </div>
         <div className="flex flex-col gap-12 max-w-3xl ">
           <div>
             <h1 className="text-gray-900 text-6xl font-bold mb-2 leading-[72px] tracking-[-1.2px]">
@@ -125,10 +133,6 @@ export const Hero = () => {
               />
             </svg>
           </div>
-        </div>
-        <div className="flex flex-col justify-start items-center min-w-96 relative">
-          <img className="w-[280px] h-[320px] absolute  z-10" src="/Pic.png" alt="" />
-          <div className="w-[280px] h-[320px] bg-gray-200 absolute bottom-0 right-4 z-0 "></div>
         </div>
       </div>
     </div>

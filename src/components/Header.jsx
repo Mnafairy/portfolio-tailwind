@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className="flex flex-row justify-between px-20 py-4 ">
+    <div className="flex flex-row justify-between px-20 py-4">
       <h1 className="font-bold text-3xl ml-8 tracking-[-0.6px]">
         &#60;SS /&#62;
       </h1>
