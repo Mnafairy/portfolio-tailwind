@@ -1,10 +1,12 @@
-import { Header, Hero, About } from "@/components";
+import { Header, Hero, About, Skills,Experience } from "@/components";
 const Portfolio = () => {
   return (
-    <div className="lg:max-w-[1440px] lg:m-auto">
+    <div className="sm:max-w-[1440px] sm:m-auto">
       <Header />
       <Hero />
-      <About/>
+      <About />
+      <Skills />
+      <Experience/>
     </div>
   );
 };

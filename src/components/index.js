@@ -1,4 +1,6 @@
 export * from "./Header";
 export * from "./Hero";
 export * from "./About";
-export * from "./icons/icon"
+export * from "./Skills";
+export * from "./Experience";
+export * from "./icons/icon";

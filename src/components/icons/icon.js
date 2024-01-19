@@ -14,3 +14,4 @@ export * from "./SocketIcon";
 export * from "./StorybookIcon";
 export * from "./TailwindIcon";
 export * from "./TypescriptIcon";
+export * from "./LogoUpwork";

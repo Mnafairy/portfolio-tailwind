@@ -1,10 +1,9 @@
+import Button from "./Button";
 export const About = () => {
   return (
     <div className="py-16 px-4 sm:py-24 sm:px-20 bg-gray-50">
       <div className="flex flex-col items-center justify-center gap-6 sm:gap-12 sm:px-8">
-        <button className="w-[105px] h-7 px-5 py-1 text-gray-600 text-sm font-medium bg-gray-200 rounded-xl	">
-          About me
-        </button>
+        <Button text="About me" />
         <div className="sm:flex sm:flex-row sm:gap-12">
           <div className="mb-12 w-[343px] h-[380px] sm:min-w-[584px] sm:min-h-[694px] relative flex items-center justify-center sm:flex sm:items-start sm:justify-start">
             <img
