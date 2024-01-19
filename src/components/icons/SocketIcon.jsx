@@ -2,8 +2,8 @@ export const SocketIcon = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="65"
-      height="64"
+      width={65}
+      height={64}
       viewBox="0 0 65 64"
       fill="none"
     >
@@ -16,8 +16,8 @@ export const SocketIcon = ({ width, height }) => {
       <defs>
         <clipPath id="clip0_316_308">
           <rect
-            width="64"
-            height="64"
+            width={64}
+            height={64}
             fill="white"
             transform="translate(0.5)"
           />

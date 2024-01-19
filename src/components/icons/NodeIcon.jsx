@@ -2,8 +2,8 @@ export const NodeIcon = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="57"
-      height="64"
+      width={57}
+      height={64}
       viewBox="0 0 57 64"
       fill="none"
     >
@@ -20,8 +20,8 @@ export const NodeIcon = ({ width, height }) => {
       <defs>
         <clipPath id="clip0_316_295">
           <rect
-            width="56.32"
-            height="64"
+            width={56.32}
+            height={64}
             fill="white"
             transform="translate(0.653809)"
           />

@@ -2,8 +2,8 @@ export const FigmaIcon = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="44"
-      height="64"
+      width={44}
+      height={64}
       viewBox="0 0 44 64"
       fill="none"
     >
@@ -32,8 +32,8 @@ export const FigmaIcon = ({ width, height }) => {
       <defs>
         <clipPath id="clip0_316_332">
           <rect
-            width="42.6667"
-            height="64"
+            width={42.6667}
+            height={64}
             fill="white"
             transform="translate(0.692627)"
           />

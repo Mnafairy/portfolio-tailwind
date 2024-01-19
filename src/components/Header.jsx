@@ -1,10 +1,10 @@
 export const Header = () => {
   return (
-    <div className="flex flex-row justify-between px-20 py-4">
-      <h1 className="font-bold text-3xl ml-8 tracking-[-0.6px]">
+    <div className="flex flex-row justify-between px-4 py-4 sm:px-[80px] ">
+      <h1 className="font-bold text-3xl sm:ml-8 tracking-[-0.6px]">
         &#60;SS /&#62;
       </h1>
-      <div className="flex flex-row justify-center items-center gap-6 mr-8">
+      <div className="hidden sm:flex sm:flex-row sm:justify-center sm:items-center gap-6 mr-8">
         <ul className="flex flex-row justify-center items-center gap-6 style-none text-gray-600 font-medium leading-6	">
           <li>About</li>
           <li>Work</li>
@@ -85,9 +85,45 @@ export const Header = () => {
             />
           </svg>
         </button>
-        <button className="px-4 py-1.5 bg-gray-900 text-white rounded-xl	">
+        <button className="px-4 py-1.5 bg-gray-900 text-white rounded-xl ">
           Download CV
         </button>
+      </div>
+      <div className="flex items-center sm:hidden">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Icon">
+            <path
+              id="Vector"
+              d="M4 12H20"
+              stroke="#4B5563"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              id="Vector_2"
+              d="M4 6H20"
+              stroke="#4B5563"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              id="Vector_3"
+              d="M4 18H20"
+              stroke="#4B5563"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
       </div>
     </div>
   );

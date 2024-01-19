@@ -2,8 +2,8 @@ export const SassIcon = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="65"
-      height="64"
+      width={65}
+      height={64}
       viewBox="0 0 65 64"
       fill="none"
     >
