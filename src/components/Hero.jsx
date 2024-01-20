@@ -48,19 +48,20 @@ export const Hero = () => {
             </svg>
             Ahmedabad, India
           </p>
-          <p className="flex gap-2">
-            <svg
-              className="flex justify-center items-center text-center	"
-              width="8"
-              height="8"
-              viewBox="0 0 8 8"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="8" height="8" rx="4" fill="#10B981" />
-            </svg>
-            Available for new projects
-          </p>
+          <div className="flex flex-row gap-2">
+            <div className="p-2">
+              <svg
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="8" height="8" rx="4" fill="#10B981" />
+              </svg>
+            </div>
+            <p className="flex gap-2">Available for new projects</p>
+          </div>
         </div>
         <div className="flex gap-2.5">
           <svg

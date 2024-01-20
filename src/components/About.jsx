@@ -4,8 +4,8 @@ export const About = () => {
     <div className="py-16 px-4 sm:py-24 sm:px-20 bg-gray-50">
       <div className="flex flex-col items-center justify-center gap-6 sm:gap-12 sm:px-8">
         <Button text="About me" />
-        <div className="sm:flex sm:flex-row sm:gap-12">
-          <div className="mb-12 w-[343px] h-[380px] sm:min-w-[584px] sm:min-h-[694px] relative flex items-center justify-center sm:flex sm:items-start sm:justify-start">
+        <div className="flex flex-col items-center justify-center sm:flex sm:flex-row sm:gap-12">
+          <div className="mb-12 w-[343px] h-[380px] sm:min-w-[584px] sm:min-h-[694px] relative flex items-center justify-center sm:items-start sm:justify-start">
             <img
               className="w-[280px] h-[360px] sm:h-[480px] sm:w-[400px] object-cover z-10 border-8 border-gray-50 sm:ml-[50px]"
               src="/profile.png"

@@ -4,3 +4,6 @@ export * from "./About";
 export * from "./Skills";
 export * from "./Experience";
 export * from "./icons/icon";
+export * from "./Footer";
+export * from "./Contactme";
+export * from "./Work"

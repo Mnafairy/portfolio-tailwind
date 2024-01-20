@@ -5,7 +5,7 @@ const Card = () => {
       <LogoUpwork />
       <p className="text-gray-700 sm:hidden">Nov 2021 - Present</p>
       <div>
-        <h3 className="text-gray-900 font-semibold text-lg sm:text-xl	">
+        <h3 className="text-gray-900 font-semibold text-lg mb-4 sm:text-xl	">
           Sr. Frontend Developer
         </h3>
         <ul className="text-gray-600 list-disc ml-5">

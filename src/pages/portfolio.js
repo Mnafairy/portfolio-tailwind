@@ -1,4 +1,13 @@
-import { Header, Hero, About, Skills,Experience } from "@/components";
+import {
+  Header,
+  Hero,
+  About,
+  Skills,
+  Experience,
+  Footer,
+  Contactme,
+  Work,
+} from "@/components";
 const Portfolio = () => {
   return (
     <div className="sm:max-w-[1440px] sm:m-auto">
@@ -6,7 +15,10 @@ const Portfolio = () => {
       <Hero />
       <About />
       <Skills />
-      <Experience/>
+      <Experience />
+      <Work />
+      <Contactme />
+      <Footer />
     </div>
   );
 };
