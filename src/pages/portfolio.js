@@ -13,11 +13,19 @@ const Portfolio = () => {
     <div className="sm:max-w-[1440px] sm:m-auto">
       <Header />
       <Hero />
-      <About />
+      <section id="section">
+        <About />
+      </section>
       <Skills />
-      <Experience />
-      <Work />
-      <Contactme />
+      <section id="section3">
+        <Experience />
+      </section>
+      <section id="section2">
+        <Work />
+      </section>
+      <section id="section4">
+        <Contactme />
+      </section>
       <Footer />
     </div>
   );
