@@ -22,3 +22,6 @@ export * from "./TwitterIcon";
 export * from "./FigmaBlackIcon";
 export * from "./GreendotIcon";
 export * from "./TagIcon";
+export * from "./CopyIcon";
+export * from "./PhoneIcon";
+export * from "./MessageIcon";

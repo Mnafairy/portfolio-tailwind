@@ -9,8 +9,12 @@ import {
 export const Hero = () => {
   const { theme } = useTheme();
   const divClassName = `flex flex-col justify-center items-center gap-12  py-16 px-4 sm:px-20 sm:py-24 sm:flex sm:flex-row-reverse  ${
-    theme == "light" ? "text-white" : "bg-gray-950"
+    theme == "light" ? "text-600" : "bg-gray-950 text-gray-300"
   }`;
+  const headerClassName =
+    theme == "light" ? "text-gray-900" : "bg-gray-950 text-gray-50 ";
+  const boxClassName = theme == "light" ? "bg-gray-200" : "bg-gray-700";
+  
   return (
     <div className={divClassName}>
       <div className="flex flex-col justify-start items-center w-[343px] h-[300px] sm:w-[400px] sm:h-[380px] relative">
@@ -19,14 +23,18 @@ export const Hero = () => {
           src="/pic.png"
           alt=""
         />
-        <div className="w-72 h-[280px] sm:w-[280px] sm:h-80 bg-gray-200 absolute z-0 top-5 sm:top-10 sm:bottom-0 sm:right-2"></div>
+        <div
+          className={`${boxClassName} w-72 h-[280px] sm:w-[280px] sm:h-80 bg-gray-200 absolute z-0 top-5 sm:top-10 sm:bottom-0 sm:right-2`}
+        ></div>
       </div>
       <div className="flex flex-col gap-12 max-w-3xl ">
         <div>
-          <h1 className="text-gray-900 text-4xl sm:text-6xl font-bold mb-2 leading-[72px] sm:tracking-[-1.2px]">
+          <h1
+            className={`${headerClassName} text-4xl sm:text-6xl font-bold mb-2 leading-[72px] sm:tracking-[-1.2px]`}
+          >
             Hi, I'm Sagar 👋
           </h1>
-          <p className="text-gray-600 leading-6">
+          <p className=" leading-6">
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
             experiences that are fast, accessible, visually appealing, and
@@ -34,7 +42,7 @@ export const Hero = () => {
             over 7 years, I still love it as if it was something new.
           </p>
         </div>
-        <div className="text-gray-600 leading-6">
+        <div className=" leading-6">
           <div className="flex gap-2 mb-2 ">
             <TagIcon />
             <p>Ahmedabad, India</p>

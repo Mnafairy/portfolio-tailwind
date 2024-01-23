@@ -1,7 +1,13 @@
 import Button from "./Button";
+import { useTheme } from "@/context/ThemeContext";
 export const About = () => {
+  const { theme } = useTheme();
+  const bgColor =
+    theme == "light" ? "bg-gray-50 text-gray-600" : "bg-gray-900 text-gray-300";
+  const headerColor = theme == "light" ? "text-gray-900" : "text-gray-50 ";
+  const boxClassName = theme == "light" ? "bg-gray-200" : "bg-gray-700";
   return (
-    <div className="py-16 px-4 sm:py-24 sm:px-20 bg-gray-50">
+    <div className={`py-16 px-4 sm:py-24 sm:px-20 ${bgColor}`}>
       <div className="flex flex-col items-center justify-center gap-6 sm:max-w-[1280px] sm:m-auto sm:gap-12 sm:px-8">
         <Button text="About me" />
         <div className="flex flex-col items-center justify-center sm:flex sm:flex-row sm:gap-12">
@@ -11,15 +17,20 @@ export const About = () => {
               src="/profile.png"
               alt=""
             />
-            <div className="w-[320px] h-[360px] sm:w-[400px] sm:h-[480px] bg-gray-200 absolute z-0 top-7 sm:bottom-0 sm:top-12 sm:left-2"></div>
+            <div
+              className={`${boxClassName} w-[320px] h-[360px] sm:w-[400px] sm:h-[480px] absolute z-0 top-7 sm:bottom-0 sm:top-12 sm:left-2`}
+            ></div>
           </div>
           <div className="flex flex-col gap-6 ">
-            <h3 className="text-2xl sm:text-3xl		font-semibold text-gray-900 ">
+            <h3
+              className={`${headerColor} text-2xl sm:text-3xl font-semibold`}
+            >
               Curious about me? Here you have it:
             </h3>
-            <div className="flex flex-col gap-4 text-gray-600 ">
+            <div className="flex flex-col gap-4  ">
               <p>
-                I'm a passionate, <span className="underline">self-proclaimed designer</span> who
+                I'm a passionate,{" "}
+                <span className="underline">self-proclaimed designer</span> who
                 specializes in full stack development (React.js & Node.js). I am
                 very enthusiastic about bringing the technical and visual
                 aspects of digital products to life. User experience, pixel
