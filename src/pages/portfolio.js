@@ -10,7 +10,7 @@ import {
 } from "@/components";
 const Portfolio = () => {
   return (
-    <div className="sm:max-w-[1440px] sm:m-auto">
+    <div className="  sm:m-auto">
       <Header />
       <Hero />
       <section id="section">

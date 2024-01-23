@@ -2,7 +2,7 @@ import Button from "./Button";
 export const About = () => {
   return (
     <div className="py-16 px-4 sm:py-24 sm:px-20 bg-gray-50">
-      <div className="flex flex-col items-center justify-center gap-6 sm:gap-12 sm:px-8">
+      <div className="flex flex-col items-center justify-center gap-6 sm:max-w-[1280px] sm:m-auto sm:gap-12 sm:px-8">
         <Button text="About me" />
         <div className="flex flex-col items-center justify-center sm:flex sm:flex-row sm:gap-12">
           <div className="mb-12 w-[343px] h-[380px] sm:min-w-[584px] sm:min-h-[694px] relative flex items-center justify-center sm:items-start sm:justify-start">
@@ -19,12 +19,12 @@ export const About = () => {
             </h3>
             <div className="flex flex-col gap-4 text-gray-600 ">
               <p>
-                I'm a passionate, self-proclaimed designer who specializes in
-                full stack development (React.js & Node.js). I am very
-                enthusiastic about bringing the technical and visual aspects of
-                digital products to life. User experience, pixel perfect design,
-                and writing clear, readable, highly performant code matters to
-                me.
+                I'm a passionate, <span className="underline">self-proclaimed designer</span> who
+                specializes in full stack development (React.js & Node.js). I am
+                very enthusiastic about bringing the technical and visual
+                aspects of digital products to life. User experience, pixel
+                perfect design, and writing clear, readable, highly performant
+                code matters to me.
               </p>
               <p>
                 I began my journey as a web developer in 2015, and since then,
@@ -42,9 +42,16 @@ export const About = () => {
               <p>
                 When I'm not in full-on developer mode, you can find me hovering
                 around on twitter or on indie hacker, witnessing the journey of
-                early startups or enjoying some free time. You can follow me on
-                Twitter where I share tech-related bites and build in public, or
-                you can follow me on GitHub.
+                early startups or enjoying some free time. You can follow me on{" "}
+                <a href="" className="underline">
+                  Twitter
+                </a>{" "}
+                where I share tech-related bites and build in public, or you can
+                follow me on{" "}
+                <a href="https://github.com/Mnafairy" className="underline">
+                  GitHub
+                </a>
+                .
               </p>
               <p>Finally, some quick bits about me.</p>
               <ul className="list-disc flex flex-row gap-4 sm:gap-8 ml-4">
