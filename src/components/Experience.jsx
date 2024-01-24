@@ -1,6 +1,6 @@
 import Button from "./Button";
 import { LogoUpwork } from "@/components";
-import { ExperienceData } from "@/utils/experienceData";
+import { ExperienceData } from "@/utils/ExperienceData";
 import { useTheme } from "@/context/ThemeContext";
 
 export const Experience = () => {
@@ -29,7 +29,9 @@ export const Experience = () => {
             <LogoUpwork />
             <p className={`${dateColor} sm:order-1 `}>{data.date}</p>
             <div className="sm:w-[380px]">
-              <h3 className={`${headerColor} font-semibold text-lg mb-4 sm:text-xl`}>
+              <h3
+                className={`${headerColor} font-semibold text-lg mb-4 sm:text-xl`}
+              >
                 {data.position}
               </h3>
               <ul className="list-disc ml-5">

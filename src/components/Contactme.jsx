@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Copy from "react-copy-to-clipboard";
 import {
   GithubIcon,
   TwitterIcon,
@@ -10,7 +11,8 @@ import {
 import { useTheme } from "@/context/ThemeContext";
 export const Contactme = () => {
   const { theme } = useTheme();
-  const bgColor = theme == "light" ? "text-gray-600 " : "bg-gray-950 text-gray-300";
+  const bgColor =
+    theme == "light" ? "text-gray-600 " : "bg-gray-950 text-gray-300";
   const contactColor =
     theme == "light" ? "text-gray-900 " : "bg-gray-950 text-gray-50";
 
@@ -42,7 +44,7 @@ export const Contactme = () => {
         </div>
       </div>
       <div>
-        <p >You may also find me on these platforms!</p>
+        <p>You may also find me on these platforms!</p>
         <div className="flex flex-row gap-4 justify-center mt-2">
           <GithubIcon />
           <TwitterIcon />

@@ -32,7 +32,7 @@ export const Work = () => {
                 />
               </div>
               <div
-                className={`${textBoxBg} rounded-r-xl flex flex-col gap-6 p-8 sm:p-12 sm:w-[580px]`}
+                className={`${textBoxBg} rounded-r-xl  flex flex-col gap-6 p-8 sm:p-12 sm:w-[580px]`}
               >
                 <h3 className={`${headerColor} font-semibold text-lg`}>
                   {data.title}

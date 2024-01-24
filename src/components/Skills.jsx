@@ -1,90 +1,7 @@
 import Button from "./Button";
 import Icon from "./Icon";
 import { useTheme } from "@/context/ThemeContext";
-import {
-  JavascriptIcon,
-  TypescriptIcon,
-  ReactIcon,
-  NextIcon,
-  NodeIcon,
-  ExpressIcon,
-  NestIcon,
-  SocketIcon,
-  PostgreIcon,
-  MongoIcon,
-  SassIcon,
-  TailwindIcon,
-  FigmaIcon,
-  CypressIcon,
-  StorybookIcon,
-  GitIcon,
-} from "@/components/icons/icon";
-const iconData = [
-  {
-    icon: <JavascriptIcon />,
-    iconName: "Javascript",
-  },
-  {
-    icon: <TypescriptIcon />,
-    iconName: "Typescript",
-  },
-  {
-    icon: <ReactIcon />,
-    iconName: "React",
-  },
-  {
-    icon: <NextIcon />,
-    iconName: "Next.js",
-  },
-  {
-    icon: <NodeIcon />,
-    iconName: "Node.js",
-  },
-  {
-    icon: <ExpressIcon />,
-    iconName: "Express.js",
-  },
-  {
-    icon: <NestIcon />,
-    iconName: "Nest.js",
-  },
-  {
-    icon: <SocketIcon />,
-    iconName: "Socket.io",
-  },
-  {
-    icon: <PostgreIcon />,
-    iconName: "PostgreSQL",
-  },
-  {
-    icon: <MongoIcon />,
-    iconName: "MongoDB",
-  },
-  {
-    icon: <SassIcon />,
-    iconName: "Sass/Scss",
-  },
-  {
-    icon: <TailwindIcon />,
-    iconName: "Tailwindcss",
-  },
-  {
-    icon: <FigmaIcon />,
-    iconName: "Figma",
-  },
-  {
-    icon: <CypressIcon />,
-    iconName: "Cypress",
-  },
-  {
-    icon: <StorybookIcon />,
-    iconName: "Storybook",
-  },
-  {
-    icon: <GitIcon />,
-    iconName: "Git",
-  },
-];
+import { iconData } from "@/utils/iconData";
 export const Skills = () => {
   const { theme } = useTheme();
   const bgColor =
@@ -99,9 +16,14 @@ export const Skills = () => {
           </p>
         </div>
         <div className="flex flex-wrap gap-y-4 gap-x-12 sm:h-[250px] sm:gap-24 ">
-          {iconData.map((e, index) => {
-            return <Icon icon={e.icon} iconName={e.iconName} key={index} />;
-          })}
+          {iconData.map((e, index) => (
+              <div className="flex flex-col justify-center items-center text-center m-auto">
+                {e.icon}
+                {e.iconName}
+              </div>
+            )
+            // <Icon icon={e.icon} iconName={e.iconName} key={index} />;
+          )}
         </div>
       </div>
     </div>

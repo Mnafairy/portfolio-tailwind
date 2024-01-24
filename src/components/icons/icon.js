@@ -25,3 +25,6 @@ export * from "./TagIcon";
 export * from "./CopyIcon";
 export * from "./PhoneIcon";
 export * from "./MessageIcon";
+export * from "./HamburgerMenu";
+export * from "./ExitIcon";
+

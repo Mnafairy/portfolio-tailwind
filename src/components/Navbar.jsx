@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -15,7 +16,6 @@ const Navbar = () => {
           <div className="text-white">Testimonials</div>
           <div className="text-white">Contact</div>
         </div> */}
-
         <div >
           {/* Hamburger menu icon */}
           <button className="text-black" onClick={toggleMenu}>
