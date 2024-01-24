@@ -1,5 +1,5 @@
 import Button from "./Button";
-import Copy from "react-copy-to-clipboard";
+// import Copy from "react-copy-to-clipboard";
 import {
   GithubIcon,
   TwitterIcon,

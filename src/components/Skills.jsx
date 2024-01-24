@@ -1,5 +1,4 @@
 import Button from "./Button";
-import Icon from "./Icon";
 import { useTheme } from "@/context/ThemeContext";
 import { iconData } from "@/utils/iconData";
 export const Skills = () => {
@@ -16,7 +15,8 @@ export const Skills = () => {
           </p>
         </div>
         <div className="flex flex-wrap gap-y-4 gap-x-12 sm:h-[250px] sm:gap-24 ">
-          {iconData.map((e, index) => (
+          {iconData.map(
+            (e, index) => (
               <div className="flex flex-col justify-center items-center text-center m-auto">
                 {e.icon}
                 {e.iconName}

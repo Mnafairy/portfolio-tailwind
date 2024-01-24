@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import { useState } from "react";
 import { useTheme } from "@/context/ThemeContext";
 import {
@@ -7,6 +6,7 @@ import {
   ExitIcon,
   HamburgerMenu,
 } from "@/components/icons/icon";
+
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,7 +26,7 @@ export const Header = () => {
   const navBarClassName = theme == "light" ? "text-gray-600" : "text-gray-300";
 
   return (
-    <div className={`${divClassName} fixed w-full z-20`}>
+    <div className={`${divClassName} fixed sm:relative w-full z-20`}>
       <div className="flex flex-row justify-between px-4 py-4 sm:px-[80px] sm:max-w-[1440px] sm:m-auto ">
         <h1 className=" font-bold text-3xl sm:ml-8 tracking-[-0.6px] ">
           <a href="#">&#60;SS /&#62;</a>
@@ -35,7 +35,7 @@ export const Header = () => {
           <div
             className={`${navBarClassName} flex flex-row justify-center items-center gap-6 font-medium leading-6`}
           >
-            <a href="#section">About</a>
+            <a href="#section1">About</a>
             <a href="#section2">Work</a>
             <a href="#section3">Testimonials</a>
             <a href="#section4">Contact</a>
@@ -50,7 +50,7 @@ export const Header = () => {
             Download CV
           </button>
         </div>
-        <div onClick={toggleMenu}>
+        <div onClick={toggleMenu} className="sm:hidden">
           {menuOpen == false ? <HamburgerMenu /> : <ExitIcon />}
         </div>
       </div>
